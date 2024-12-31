@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Define the data
+data = [
+    {"Description": "Lunch", "Category": "Food", "Amount": 150.50},
+    {"Description": "Movie", "Category": "Entertainment", "Amount": 300.00},
+    {"Description": "Bus Ticket", "Category": "Transport", "Amount": 50.00},
+    {"Description": "Groceries", "Category": "Food", "Amount": 450.75},
+    {"Description": "Taxi", "Category": "Transport", "Amount": 200.00},
+]
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Save to a CSV file
+df.to_csv("expenses.csv", index=False)
+
+print("CSV file created successfully!")
